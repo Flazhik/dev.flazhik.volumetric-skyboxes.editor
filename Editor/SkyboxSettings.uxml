@@ -1,0 +1,52 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Packages/dev.flazhik.volumetric-skyboxes.editor/Editor/General.uss?fileID=7433441132597879392&amp;guid=8eb16119f88155b459f254e91811d486&amp;type=3#General" />
+    <ui:VisualElement name="VisualElement" focusable="true" style="width: 100%; height: 100%; padding-left: 2.5px; padding-right: 2.5px; padding-top: 2.5px; padding-bottom: 2.5px;">
+        <ui:VisualElement style="width: 100%; height: 40px; flex-direction: row; justify-content: space-between; flex-shrink: 0;">
+            <ui:Button text="Go back" name="go-back" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; min-width: 80px;" />
+            <ui:VisualElement style="flex-shrink: 0; flex-grow: 0; flex-direction: row;">
+                <ui:Button name="edit-prefab" text="Open prefab" tooltip="Open prefab" style="flex-grow: 0; flex-shrink: 0; font-size: 14px; width: 135px; height: 40px; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; padding-left: 8px; padding-right: 2.5px; padding-top: 2.5px; padding-bottom: 2.5px; -unity-text-align: middle-left;">
+                    <ui:VisualElement tooltip="Open prefab" class="button-icon" style="width: 40%; height: 100%; background-image: url(&quot;project://database/Packages/dev.flazhik.volumetric-skyboxes.editor/Editor/unity.png?fileID=2800000&amp;guid=3a4bf023cbdde0d4fbf6f29661725c64&amp;type=3#unity&quot;); -unity-background-scale-mode: scale-to-fit; -unity-slice-left: 0; -unity-slice-scale: 1px; right: 0; position: absolute; max-width: 40px; max-height: 100%; min-width: 40px; min-height: 100%; top: 0;" />
+                </ui:Button>
+                <ui:Button name="open-folder" style="flex-grow: 0; flex-shrink: 0; font-size: 15px; width: 40px; height: 40px; padding-left: 2.5px; padding-right: 2.5px; padding-top: 2.5px; padding-bottom: 2.5px; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px;">
+                    <ui:VisualElement tooltip="Open skybox folder" class="button-icon" style="background-image: url(&quot;project://database/Packages/dev.flazhik.volumetric-skyboxes.editor/Editor/folder.png?fileID=2800000&amp;guid=8c21fa4832ad9e348bd9f0c8523b086f&amp;type=3#folder&quot;); width: 100%; height: 100%;" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="width: auto; height: 2px; margin-left: 0; margin-bottom: 5px; margin-top: 5px; margin-right: 0; background-color: rgb(168, 168, 168); flex-shrink: 0;" />
+        <ui:ScrollView focusable="true" style="flex-shrink: 0; flex-grow: 1; height: 399px; align-items: stretch; justify-content: flex-start;">
+            <ui:VisualElement style="width: 100%; height: 100px; flex-direction: row; flex-shrink: 0; margin-bottom: 5px;">
+                <ui:VisualElement name="icon-preview" style="width: 100px; height: 100px; background-color: rgb(255, 255, 255); flex-shrink: 0; margin-right: 5px;" />
+                <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                    <ui:VisualElement style="height: 100%; flex-grow: 1;">
+                        <ui:Label text="Skybox Name" name="skybox-title-preview" style="font-size: 20px; white-space: normal; -unity-font-style: bold;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label text="Metadata" style="font-size: 14px; -unity-font-style: bold;" />
+            <ui:TextField picking-mode="Ignore" label="Skybox Title" name="skybox-title" />
+            <ui:TextField picking-mode="Ignore" label="Skybox Author" name="skybox-author" />
+            <uie:ObjectField label="Thumbnail" name="icon" type="UnityEngine.Sprite, UnityEngine.CoreModule" />
+            <uie:ObjectField label="Skybox Prefab" name="prefab" />
+            <ui:VisualElement name="VisualElement" style="width: auto; height: 2px; margin-left: 0; margin-bottom: 5px; margin-top: 5px; margin-right: 0; background-color: rgba(255, 255, 255, 0); flex-shrink: 0;" />
+            <ui:Label text="Visuals" name="Label" style="font-size: 14px; -unity-font-style: bold;" />
+            <uie:ObjectField label="Skybox Material" name="skybox-material" type="UnityEngine.Material, UnityEngine.CoreModule" />
+            <ui:Toggle label="Custom Lighting" name="use-custom-lighting" />
+            <uie:ColorField label="Lighting Color" name="lighting-color" />
+            <ui:Slider label="Lighting Intensity" high-value="1" name="lighting-intensity" />
+            <ui:Toggle label="Use Fog" name="use-custom-fog" />
+            <uie:ColorField label="Fog Color" name="fog-color" />
+            <ui:FloatField label="Fog Start" value="1" name="fog-minimum" is-delayed="false" picking-mode="Ignore" />
+            <ui:FloatField label="Fog End" value="1" name="fog-maximum" is-delayed="false" picking-mode="Ignore" />
+            <ui:VisualElement name="VisualElement" style="width: auto; height: 2px; margin-left: 0; margin-bottom: 5px; margin-top: 5px; margin-right: 0; background-color: rgba(255, 255, 255, 0); flex-shrink: 0;" />
+            <ui:Label text="Custom Grid Textures" name="Label" style="font-size: 14px; -unity-font-style: bold;" />
+            <uie:ObjectField label="Base Grid Texture" name="base-grid-texture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" />
+            <uie:ObjectField label="Top Row Grid Texture" name="top-row-grid-texture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" />
+            <uie:ObjectField label="Top Grid Texture" name="top-grid-texture" type="UnityEngine.Texture2D, UnityEngine.CoreModule" />
+            <ui:VisualElement name="VisualElement" style="width: auto; height: 2px; margin-left: 0; margin-bottom: 5px; margin-top: 5px; margin-right: 0; background-color: rgba(255, 255, 255, 0); flex-shrink: 0;" />
+            <ui:Label text="Camera Settings" name="Label" style="font-size: 14px; -unity-font-style: bold;" />
+            <ui:FloatField label="Parallax Coefficient" value="1" name="parallax-coefficient" is-delayed="false" picking-mode="Ignore" />
+            <ui:FloatField label="Near Clip Plane" value="0.1" name="near-clip-plane" is-delayed="false" picking-mode="Ignore" />
+            <ui:FloatField label="Far Clip Plane" value="4000" name="far-clip-plane" is-delayed="false" picking-mode="Ignore" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

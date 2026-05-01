@@ -1,0 +1,3 @@
+.button-icon {
+    -unity-background-image-tint-color: var(--button-icon-color);
+}

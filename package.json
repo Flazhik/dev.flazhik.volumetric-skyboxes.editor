@@ -1,0 +1,26 @@
+{
+  "name": "dev.flazhik.volumetric-skyboxes.editor",
+  "displayName": "Volumetric Skyboxes Editor",
+  "version": "1.0.0",
+  "description": "Skyboxes editor for a VolumetricSkyboxes ULTRAKILL mod",
+  "author": "Flazhik",
+  "contributors": [
+    {
+      "name": "eternalUnion"
+    }
+  ],
+  "unity": "2022.3",
+  "dependencies": {
+	  "com.unity.nuget.newtonsoft-json": "3.2.1",
+	  "com.unity.addressables": "1.21.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flazhik/dev.flazhik.volumetric-skyboxes.editor.git"
+  },
+  "keywords": [
+    "VolumetricSkyboxesEditor",
+    "VolumetricSkyboxes",
+    "Skyboxes"
+  ]
+}

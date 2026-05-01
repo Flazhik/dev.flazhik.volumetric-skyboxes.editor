@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Packages/dev.flazhik.volumetric-skyboxes.editor/Editor/General.uss?fileID=7433441132597879392&amp;guid=8eb16119f88155b459f254e91811d486&amp;type=3#General" />
+    <ui:VisualElement style="height: 70px; border-left-color: rgb(82, 82, 82); border-right-color: rgb(82, 82, 82); border-top-color: rgb(82, 82, 82); border-bottom-color: rgb(82, 82, 82); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 1px; border-bottom-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; margin-bottom: 2.5px;">
+        <ui:VisualElement style="width: 100%; height: 100%; flex-direction: row; flex-basis: 100%; align-items: center;">
+            <ui:VisualElement style="flex-shrink: 0; height: 67.5px; width: 67.5px; min-width: 67.5px; padding-left: 2.5px; padding-right: 2.5px; padding-top: 2.5px; padding-bottom: 2.5px;">
+                <ui:VisualElement name="icon" style="width: 100%; height: 100%; -unity-background-scale-mode: stretch-to-fill; background-color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement style="width: 100%; flex-basis: initial; height: 100%; padding-left: 2.5px; padding-right: 2.5px; padding-top: 2.5px; padding-bottom: 2.5px;">
+                <ui:Button name="modify-skybox" style="width: 100%; height: 100%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; padding-left: 1px; padding-right: 1px; padding-top: 1px; padding-bottom: 1px; flex-direction: row;">
+                    <ui:VisualElement style="flex-grow: 1; height: 100%; padding-left: 5px;">
+                        <ui:VisualElement style="flex-shrink: 0; flex-direction: row; align-items: center;">
+                            <ui:Label text="Skybox Name" name="skybox-title" style="font-size: 18px; white-space: nowrap; padding-left: 2.5px; padding-top: 2.5px; -unity-font-style: normal;" />
+                        </ui:VisualElement>
+                        <ui:Label text="Author" name="skybox-author" style="color: rgb(142, 142, 142); padding-left: 2.5px; -unity-text-align: middle-left; font-size: 12px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="control-container" style="flex-direction: row; flex-shrink: 0; flex-grow: 0; align-self: center;">
+                        <ui:Button name="delete-skybox" style="flex-shrink: 0; flex-grow: 0; width: 40px; height: 40px; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; padding-left: 2.5px; padding-right: 2.5px; padding-top: 2.5px; padding-bottom: 2.5px;">
+                            <ui:VisualElement class="button-icon" style="width: 100%; height: 100%; background-image: url(&quot;project://database/Packages/dev.flazhik.volumetric-skyboxes.editor/Editor/delete.png?fileID=2800000&amp;guid=6068cdd572932d74b8ccb028d107d1f6&amp;type=3#delete&quot;);" />
+                        </ui:Button>
+                        <ui:Button name="export-skybox" style="flex-shrink: 0; flex-grow: 0; width: 40px; height: 40px; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; padding-left: 2.5px; padding-right: 2.5px; padding-top: 2.5px; padding-bottom: 2.5px;">
+                            <ui:VisualElement tooltip="Export skybox" class="button-icon" style="width: 100%; height: 100%; background-image: url(&quot;project://database/Packages/dev.flazhik.volumetric-skyboxes.editor/Editor/export.png?fileID=2800000&amp;guid=4f4113214a4432449a9deb45229b826a&amp;type=3#export&quot;);" />
+                        </ui:Button>
+                    </ui:VisualElement>
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
